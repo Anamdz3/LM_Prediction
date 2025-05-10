@@ -52,4 +52,22 @@ predict(model1,target,interval=c("prediction"))
 predict(model1,target,interval=c("confidence"))
 ```
 
+### Linear Fit Model 1
+
+```{r}
+basiccNN +geom_point() +ggtitle("SIMS vs ARM") + geom_smooth(method=lm)
+```
+
+### Model2 SIMS~GRIP
+```{r}
+basiccNN2<- ggplot(data,aes (y=SIMS,x=GRIP))
+```
+
+```{r}
+basiccNN2 +geom_point() +ggtitle("SIMS vs GRIP")
+```
+
+The relationship is a positive relationship, as the is going up to the right.
+
+
 
