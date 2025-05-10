@@ -120,3 +120,13 @@ The prediction interval for model3 is -2.2 to 2.4, and the confidence interval i
 ```{r}
 anova(model1,model3)
 ```
+
+```{r}
+anova(model2,model3)
+```
+
+```{r}
+anova(model1,model2)
+```
+
+Model1 is nested with Model3 and Model2 is also nested with Model3. We can compare this by using a ANOVA test, as we get our results, we can see that we have low p values. If both models are not nested, then we cannot use the ANOVA test. 
