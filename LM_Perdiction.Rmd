@@ -33,6 +33,11 @@ We have a scatter plot for SIMS vs ARM and it seems that the plot is going up to
 cor(SIMS~ARM,data=data)
 ```
 
+### Inferential Results 
+```{r}
+model1<-lm(SIMS~ARM,data=data)
+summary.lm(model1)
+```
 
 
 
